@@ -24,6 +24,8 @@ function gotMessage(msg) {
     const index = Math.floor(Math.random() * bot.response.length);
     if (msg.channel.id == "803043752347303969" && msg.content === bot.trigger) {
       msg.channel.send(bot.response[index]);
+      msg.channel.send("Hi");
+
     }
   }
 }
